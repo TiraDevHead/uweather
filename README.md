@@ -17,7 +17,7 @@ Open [https://xtal.ir/userv](https://xtal.ir/userv) with your browser to see the
 You can start editing the page by modifying `components/Pages/index.tsx`. The page auto-updates as you edit the file.
 <br/>
 <br/>
-<img src="https://cdn.ituring.ir/research/6/uweather.png" />
+<img src="https://cdn.ituring.ir/research/6/uwether.png" />
 <br/>
 Best regards.
 <br/>
