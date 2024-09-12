@@ -27,7 +27,7 @@ const Page: PageEl = (props, state, refresh, getProps) => {
 
 
 
-      <Window title={name} style={{ float: "right", minHeight: 200, fontFamily: "sans-serif", fontSize: 28, opacity: "60%", color: "white", marginRight: 68, marginTop: -530, backgroundColor: "#11045C", width: 800, height: 500 }}>
+      <Window title={name} style={{ float: "right", minHeight: 200,backgroundImage:"url('/wp.webp')", fontFamily: "sans-serif", fontSize: 28, opacity: "60%", color: "white", marginRight: 68, marginTop: -530, backgroundColor: "#11045C", width: 800, height: 500 }}>
         {/* <pre style={{ direction: "ltr" }}>{JSON.stringify(props, null, 2)}</pre> */}
       </Window>
 
@@ -121,7 +121,7 @@ export async function getServerSideProps(context) {
     unit, workspace, servid, servsecret,
     usedquota, quota, quotaunit, status, regdate, expid,
     role, path, devmod, userip, } = session;
-  let res = await fetch("https://irmapserver.ir/research/api/weather/")
+  let res = await fetch("https://cdn.ituring.ir/research/api/weather/")
   let data = await res.json()
   let location = data.nearest_area[0]
   let info = data.current_condition[0]
